@@ -9,9 +9,21 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.jiahaoliuliu.dubaitouristguide.TouristGuideActivity">
 
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:textColor="#FF9922"
+        android:text="Dubai Tourist Guide"
+        android:gravity="center"
+        android:textSize="40sp"
+        />
+
     <!-- List -->
     <ListView
         android:id="@+id/list"
+        android:layout_below="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     </ListView>
