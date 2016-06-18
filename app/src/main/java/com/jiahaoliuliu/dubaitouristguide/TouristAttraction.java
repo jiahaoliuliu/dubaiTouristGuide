@@ -13,9 +13,11 @@ public class TouristAttraction extends AppCompatActivity {
         setContentView(R.layout.activity_tourist_attraction);
 
         TextView title = (TextView) findViewById(R.id.title);
-        title.setText("Burj Khalifa 2");
+        String attractionName = getIntent().getStringExtra("name");
+        title.setText(attractionName);
 
         ImageView image = (ImageView) findViewById(R.id.image);
-        image.setImageDrawable(getResources().getDrawable(R.drawable.burj_khalifa_2));
+        int imageId = getIntent().getIntExtra("image", 0);
+        image.setImageDrawable(getResources().getDrawable(imageId));
     }
 }
